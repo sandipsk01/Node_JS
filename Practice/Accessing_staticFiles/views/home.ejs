@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            <%= locals.title%>
+        </title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <h1>Contact List</h1>
+        <div>
+            <ul>
+                   
+                <% for (let i of contact_list) { %> 
+                    
+                    <li>
+                        <p><%= i.name %></p>
+                        <p><%= i.phone %></p>
+                    </li>
+                    
+                <% } %>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>
